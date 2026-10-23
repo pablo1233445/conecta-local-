@@ -1,89 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexora Conecta</title>
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 <body>
-    <header> 
+    <header class="cabecalho">
         <h1>Nexora Conecta</h1>
-
-
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li> 
-                <li><a href="#explorar">Explorar empreendedores</a></li>
-                <li><a href="#">Sobre</a></li>
-
-            </ul>
-
-        </nav>
     </header>
-    <main>
-        <section id="inicio">
-            <h2>Encontre quem empreende perto de você</h2>
-            <p>Descubra produtos e serviços oferecidos por empreendedores da sua comunidade.</p>
-            
-            <a href="#explorar">Explorar empreendedores</a>
+
+    <main class="pagina-inicial">
+        <section class="apresentacao">
+            <h2>Conectando pessoas e negócios locais</h2>
+            <p>
+                Encontre serviços na sua região ou divulgue seu negócio
+                para mais pessoas.
+            </p>
         </section>
 
-        <section id="explorar">
-            <h2>Explore empreendedores</h2>
-            
-            <h3>Categorias</h3>
-            <button type="button" data-categoria="todos">Todos</button>
-            <button type="button" data-categoria="alimentacao">Alimentação</button>
-            <button type="button" data-categoria="aulas-cursos">Aulas/Cursos</button>
-            <button type="button" data-categoria="beleza-estetica">Beleza/Estética</button>
-            <button type="button" data-categoria="casa-construcao">Casa/Construção</button>
-            
-            <h3>Empreendedores</h3>
-            <article data-categoria="casa-construcao">
-                <h4>JR Materiais de Construção</h4>
-                <p>Casa/Construção</p>
-               <p>Tudo que você precisa para construir e reformar é na JR Materiais de Construção.</p>
-               <a href="#">Ver perfil</a>
-            </article>
+        <section class="opcoes-acesso">
+            <a href="cliente.html" class="cartao-acesso">
+                
+                <span class="icone-acesso" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                        <path d="m16 16 5 5"></path>
+                    </svg>
+                </span>
+                <h3>Quero encontrar negócios</h3>
+                <p>
+                    Descubra empreendedores, produtos e serviços locais.
+                </p>
+                <span class="texto-botao">Explorar negócios</span>
+            </a>
 
-            <article data-categoria="beleza-estetica">
-                <h4>Moriá Barbearia</h4>
-                <p>Beleza/Estética</p>
-                <p>Barbearia especializada em cortes masculinos e cuidados estéticos.</p>
-                <a href="#">Ver perfil</a>
-            </article>
-
-
-            <article data-categoria="aulas-cursos">
-                <h4>Espaço Bailar</h4>
-                <p>Aulas/Cursos</p>
-                <p>Bailar, um espaço onde arte, movimento e expressão se encontram.</p>
-                <a href="#">Ver perfil</a>
-                </article>  
-
-            <article data-categoria="alimentacao">
-                <h4>Freddy's Pizza</h4>
-                <p>Alimentação</p>
-                <p>A pizzaria de animatrônicos que não come crianças</p>
-                <a href="#">Ver perfil</a>
-            </article>
-
-
-
+            <a href="empreendedor.html" class="cartao-acesso">
+                
+                <span class="icone-acesso" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 10 5 4h14l2 6"></path>
+                        <path d="M3 10a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"></path>
+                        <path d="M5 12v8h14v-8"></path>
+                        <path d="M10 20v-5h4v5"></path>
+                    </svg>
+                </span>
+                <h3>Sou empreendedor</h3>
+                <p>
+                    Prepare seu espaço para divulgar e administrar seu negócio.
+                </p>
+                <span class="texto-botao">Área do empreendedor</span>
+            </a>
         </section>
-
-
     </main>
-    
-    <script src="js/script.js"></script>
 
+    <footer class="rodape">
+        <p>&copy; 2026 Nexora Conecta</p>
+    </footer>
 </body>
-
-
-
 </html>
