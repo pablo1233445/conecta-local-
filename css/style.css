@@ -319,3 +319,364 @@ nav a:hover {
         animation-duration: 0.01ms !important;
     }
 }
+
+/* ===== TELA INICIAL NEXORA CONECTA ===== */
+
+.pagina-inicial {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.apresentacao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.apresentacao h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.apresentacao p {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.opcoes-acesso {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.cartao-acesso {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    border: 1px solid #444;
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.cartao-acesso:hover {
+    transform: translateY(-5px);
+    border-color: #8b5cf6;
+}
+
+.icone-acesso {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cartao-acesso h3 {
+    margin-bottom: 12px;
+}
+
+.cartao-acesso p {
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.texto-botao {
+    margin-top: auto;
+    padding: 12px 18px;
+    border-radius: 8px;
+    background-color: #8b5cf6;
+    color: #fff;
+    font-weight: bold;
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Adaptação para celulares */
+@media (max-width: 700px) {
+    .pagina-inicial {
+        padding: 30px 16px;
+    }
+
+    .apresentacao h2 {
+        font-size: 1.6rem;
+    }
+
+    .opcoes-acesso {
+        grid-template-columns: 1fr;
+    }
+
+    .cartao-acesso {
+        padding: 24px;
+    }
+}
+
+/* ===== IDENTIDADE VISUAL DA TELA INICIAL ===== */
+
+.pagina-inicial {
+    color: #373247;
+}
+
+.apresentacao h2 {
+    color: #403653;
+    font-weight: 600;
+}
+
+.apresentacao p {
+    color: #777187;
+}
+
+.opcoes-acesso {
+    gap: 28px;
+}
+
+.cartao-acesso {
+    background-color: #ffffff;
+    border: 1px solid #e9e3f1;
+    border-radius: 18px;
+    padding: 32px;
+    box-shadow: 0 5px 20px rgba(80, 60, 110, 0.04);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.cartao-acesso:hover {
+    transform: translateY(-3px);
+    border-color: #cfc1e8;
+    box-shadow: 0 10px 25px rgba(80, 60, 110, 0.08);
+}
+
+.icone-acesso {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 18px;
+    color: #8873ad;
+    background-color: #f4f0fa;
+    border-radius: 14px;
+}
+
+.icone-acesso svg {
+    width: 25px;
+    height: 25px;
+}
+
+.cartao-acesso h3 {
+    color: #403653;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.cartao-acesso p {
+    color: #777187;
+}
+
+.texto-botao {
+    display: inline-block;
+    background-color: #eee7f8;
+    color: #665182;
+    border-radius: 9px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.cartao-acesso:hover .texto-botao {
+    background-color: #e4d9f3;
+}
+
+.rodape {
+    color: #898397;
+}
+
+/* ===== IDENTIDADE VISUAL NEXORA CONECTA ===== */
+
+/* Fundo e textos da página de empreendedores */
+body {
+    background: #F8F6FC;
+    color: #403653;
+}
+
+/* Cabeçalho */
+header {
+    background: #FFFFFF;
+    border-bottom-color: #E9E3F1;
+}
+
+header h1 {
+    color: #665182;
+}
+
+nav a:hover {
+    color: #8873AD;
+}
+
+/* Apresentação inicial da página de empreendedores */
+#inicio {
+    background: #F1ECF8;
+    border-bottom-color: #E9E3F1;
+}
+
+#inicio h2 {
+    color: #403653;
+}
+
+#inicio p {
+    color: #777187;
+}
+
+#inicio a {
+    background: #8873AD;
+    border-radius: 9px;
+}
+
+#inicio a:hover {
+    background: #756095;
+}
+
+/* Área de exploração */
+#explorar h2 {
+    color: #403653;
+}
+
+#explorar h3 {
+    color: #514566;
+}
+
+/* Botões de categorias */
+#explorar button {
+    color: #665182;
+    border-color: #D8CCE8;
+    border-radius: 9px;
+    background: #FFFFFF;
+}
+
+#explorar button:hover {
+    background: #F1ECF8;
+    border-color: #BBA9D6;
+}
+
+#explorar button:active {
+    background: #E4D9F3;
+}
+
+/* Cards dos empreendedores */
+#explorar article {
+    background: #FFFFFF;
+    border-color: #E9E3F1;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(80, 60, 110, 0.04);
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease;
+}
+
+#explorar article:hover {
+    transform: translateY(-3px);
+    border-color: #D5C7E8;
+    box-shadow: 0 10px 25px rgba(80, 60, 110, 0.08);
+}
+
+#explorar article h4 {
+    color: #403653;
+}
+
+#explorar article p {
+    color: #777187;
+}
+
+/* Categoria escrita dentro de cada card */
+#explorar article p:first-of-type {
+    color: #8873AD;
+}
+
+/* Link para visualizar o perfil */
+#explorar article a {
+    color: #756095;
+}
+
+#explorar article a:hover {
+    color: #514066;
+}
+
+/* Foco acessível no teclado */
+:focus-visible {
+    outline-color: #8873AD;
+}
+
+/* Respeita usuários que preferem menos movimento */
+@media (prefers-reduced-motion: reduce) {
+    #explorar article:hover {
+        transform: none;
+    }
+}
+
+/* ===== AJUSTES FINAIS DA TELA INICIAL ===== */
+
+body:has(.pagina-inicial) {
+    background: #F8F6FC;
+    color: #403653;
+}
+
+body:has(.pagina-inicial) header {
+    background: #FFFFFF;
+    border-bottom: 1px solid #E9E3F1;
+}
+
+body:has(.pagina-inicial) header h1 {
+    color: #665182;
+}
+
+.pagina-inicial {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.apresentacao h2 {
+    color: #403653;
+}
+
+.apresentacao p {
+    color: #777187;
+}
+
+.cartao-acesso {
+    min-height: 270px;
+    border-color: #E9E3F1;
+}
+
+.cartao-acesso:focus-visible {
+    outline: 3px solid #8873AD;
+    outline-offset: 4px;
+}
+
+.texto-botao {
+    background: #EEE7F8;
+    color: #665182;
+}
+
+.cartao-acesso:hover .texto-botao {
+    background: #E4D9F3;
+}
+
+body:has(.pagina-inicial) .rodape {
+    color: #898397;
+    border-top: 1px solid #E9E3F1;
+    background: #FFFFFF;
+}
+
+@media (max-width: 700px) {
+    .pagina-inicial {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+
+    .cartao-acesso {
+        min-height: 240px;
+    }
+}
