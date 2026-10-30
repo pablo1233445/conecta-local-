@@ -11,21 +11,14 @@
 </head>
 
 <body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
     <header> 
         <h1>Nexora Conecta</h1>
 
 
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li> 
-                <li><a href="#explorar">Explorar empreendedores</a></li>
-                <li><a href="#">Sobre</a></li>
-
-            </ul>
-
-        </nav>
+<nav aria-label="Navegação principal"><ul><li><a href="index.html">Início</a></li><li><a href="cliente.html#explorar">Explorar empreendedores</a></li><li><a href="empreendedor.html">Sou empreendedor</a></li><li><a href="index.html#sobre">Sobre</a></li></ul></nav>
     </header>
-    <main>
+    <main id="conteudo" tabindex="-1">
         <section id="inicio">
             <h2>Encontre quem empreende perto de você</h2>
             <p>Descubra produtos e serviços oferecidos por empreendedores da sua comunidade.</p>
@@ -37,6 +30,7 @@
             <h2>Explore empreendedores</h2>
             
             <h3>Categorias</h3>
+<p id="aviso-armazenamento" role="status"></p>
             <button type="button" data-categoria="todos">Todos</button>
             <button type="button" data-categoria="alimentacao">Alimentação</button>
             <button type="button" data-categoria="aulas-cursos">Aulas/Cursos</button>
@@ -44,18 +38,19 @@
             <button type="button" data-categoria="casa-construcao">Casa/Construção</button>
             
             <h3>Empreendedores</h3>
+<p id="resultados" role="status" aria-live="polite"></p>
             <article data-categoria="casa-construcao">
                 <h4>JR Materiais de Construção</h4>
                 <p>Casa/Construção</p>
                <p>Tudo que você precisa para construir e reformar é na JR Materiais de Construção.</p>
-               <a href="#">Ver perfil</a>
+               <a href="#perfil">Ver perfil</a>
             </article>
 
             <article data-categoria="beleza-estetica">
                 <h4>Moriá Barbearia</h4>
                 <p>Beleza/Estética</p>
                 <p>Barbearia especializada em cortes masculinos e cuidados estéticos.</p>
-                <a href="#">Ver perfil</a>
+                <a href="#perfil">Ver perfil</a>
             </article>
 
 
@@ -63,14 +58,14 @@
                 <h4>Espaço Bailar</h4>
                 <p>Aulas/Cursos</p>
                 <p>Bailar, um espaço onde arte, movimento e expressão se encontram.</p>
-                <a href="#">Ver perfil</a>
+                <a href="#perfil">Ver perfil</a>
                 </article>  
 
             <article data-categoria="alimentacao">
                 <h4>Freddy's Pizza</h4>
                 <p>Alimentação</p>
                 <p>A pizzaria de animatrônicos que não come crianças</p>
-                <a href="#">Ver perfil</a>
+                <a href="#perfil">Ver perfil</a>
             </article>
 
 
@@ -80,6 +75,9 @@
 
     </main>
     
+    <dialog id="perfil" aria-labelledby="perfil-nome"><button type="button" id="fechar-perfil">Fechar perfil</button><h2 id="perfil-nome"></h2><p id="perfil-categoria"></p><p id="perfil-descricao"></p><h3>Contato</h3><p id="perfil-contato"></p></dialog>
+    <noscript><p class="secao-texto">Ative o JavaScript para filtrar, abrir perfis e visualizar os negócios cadastrados.</p></noscript>
+    <footer class="rodape"><p>© 2026 Nexora Conecta · <a href="index.html#sobre">Sobre o projeto</a></p></footer>
     <script src="js/script.js"></script>
 
 </body>
